@@ -1,6 +1,17 @@
+:root {
+    --main-accent-color: #ffcff1;;
+}
+
 @font-face {
     font-family: 'micro-pop';
     src: url('./assets/MicroPop-DO10d.ttf');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'charger';
+    src: url('./assets/Charger-XRDo.otf');
     font-weight: 600;
     font-style: normal;
 }
@@ -39,10 +50,11 @@ body::-webkit-scrollbar {
     background-position: center center;
     background-attachment: fixed;
     z-index: -1;
+    opacity: .8;
 }
 
 .content-inner {
-    height: 130vh;
+    height: 135vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -51,13 +63,32 @@ body::-webkit-scrollbar {
 #content h1 {
     font-family: 'micro-pop';
     font-size: 56px;
+    text-shadow: 3px 3px var(--main-accent-color);
 }
 
 .header {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 50px;
-    
+    height: 200px;
+    background-color: rgba(255, 255, 255, .5);
 }
 
+.menu {
+    display: flex;
+    gap: 50px;
+    margin-top: 20px;
+    margin-bottom: -85px;
+}
+
+.menu div {
+    display: flex;
+    justify-content: center;
+    width: 65px;
+    height: 90px;
+    padding: 15px 0;
+    background-color: var(--main-accent-color);
+    font-family: 'charger';
+    font-size: 1em;
+}
