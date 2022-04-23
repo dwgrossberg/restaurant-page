@@ -16,7 +16,7 @@ const path = require('path');
     },
     // plugins: [
         // new HtmlWebpackPlugin({
-            // title: 'Restaurant Page',
+            // title: 'Midnight's Noodle Bar',
             // favicon: './src/assets/favicon.ico',
         // }),
     // ],
