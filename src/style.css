@@ -54,7 +54,7 @@ body::-webkit-scrollbar {
 }
 
 .content-inner {
-    height: 135vh;
+    height: 150vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -73,6 +73,8 @@ body::-webkit-scrollbar {
     align-items: center;
     height: 200px;
     background-color: rgba(255, 255, 255, .5);
+    position: sticky;
+    top: 0;
 }
 
 .menu {
@@ -80,6 +82,7 @@ body::-webkit-scrollbar {
     gap: 50px;
     margin-top: 20px;
     margin-bottom: -85px;
+
 }
 
 .menu div {
@@ -93,6 +96,19 @@ body::-webkit-scrollbar {
     font-size: 1em;
 }
 
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 50px;
+}
+
+.main div {
+    height: 250px;
+    width: 350px;
+    background-color: #ffcff1;
+}
 
 
 .made-by {
@@ -108,6 +124,9 @@ body::-webkit-scrollbar {
     padding: 7px;
     border-radius: 7px;
     width: 100%;
+    background-color: rgba(255, 255, 255, .5);
+    position: fixed;
+    bottom: 0;
 }
 
 .made-by a {
