@@ -50,11 +50,10 @@ body::-webkit-scrollbar {
     background-position: center center;
     background-attachment: fixed;
     z-index: -1;
-    opacity: .8;
+    opacity: .7;
 }
 
 .content-inner {
-    height: 180vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -71,8 +70,8 @@ body::-webkit-scrollbar {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 150px;
-    background-color: rgba(255, 255, 255, .5);
+    height: 175px;
+    background-color: rgba(255, 255, 255, .8);
     position: sticky;
     top: 0;
 }
@@ -81,7 +80,7 @@ body::-webkit-scrollbar {
     display: flex;
     margin-top: 20px;
     margin-bottom: -65px;
-
+    gap: 50px;
 }
 
 .menu div {
@@ -93,74 +92,64 @@ body::-webkit-scrollbar {
     background-color: var(--main-accent-color);
     font-family: 'charger';
     font-size: .9em;
-    margin-top: -5px;
 }
 
 .main {
     display: grid;
-    grid-template: repeat(3, 1fr) / 1fr 1fr;
-    gap: 50px;
+    grid-template: 350px 1fr 1fr 1fr / 1fr 1fr;
     align-self: center;
     width: 100%;
-}
-
-.main div {
-    height: 250px;
-    width: 350px;
-    background-color: var(--main-accent-color);
+    gap: 2rem;
 }
 
 .main div:nth-child(1) {
-    grid-area: 1 / 1 / 2 / 2;
-    height: 300px;
-    width: 200px;
+    grid-area: 2 / 1 / 3 / 2;
+    height: 400px;
+    width: 300px;
     align-self: center;
-    justify-self: center;
+    justify-self: end;
     background-image: url('./assets/melanie-lim-cMweEHGZ8Y0-unsplash.jpg');
-    background-size: 100%;
+    background-size: cover;
 }
 
 .main div:nth-child(2) {
-    grid-area: 1 / 2 / 2 / 3;
-    height: 200px;
-    width: 200px;
+    grid-area: 2 / 2 / 3 / 3;
+    height: 325px;
+    width: 300px;
     align-self: center;
-    justify-self: center;
+    justify-self: start;
     background-image: url('./assets/selina-thomas-8Nykhfvxx2E-unsplash.jpg');
     background-size: 100%;
 }
 
 .main div:nth-child(3) {
-    grid-area: 2 / 1 / 3 / 2;
+    grid-area: 3 / 1 / 4 / 2;
     height: 350px;
     width: 250px;
     align-self: center;
-    justify-self: center;
+    justify-self: end;
     background-image: url('./assets/david-becker-tAzMwyAzMkU-unsplash.jpg');
     background-size: 100%;
 }
 
 .main div:nth-child(4) {
-    grid-area: 2 / 2 / 3 / 3;
-    height: 300px;
-    width: 200px;
+    grid-area: 3 / 2 / 4 / 3;
+    height: 400px;
+    width: 300px;
     align-self: center;
-    justify-self: center;
+    justify-self: start;
     background-image: url('./assets/montatip-lilitsanong-IDHESUEbDgY-unsplash.jpg');
     background-size: 100%;
 }
 
 .main div:nth-child(5) {
-    grid-area: 3 / 1 / 4 / 3;
-    height: 450px;
-    width: 300px;
+    grid-area: 4 / 1 / 5 / 3;
+    height: 300px;
+    width: 700px;
     width: stretch;
-    align-self: center;
     justify-self: center;
-    background-image: url('./assets/montatip-lilitsanong-R6BOvlOifNo-unsplash.jpg');
+    background-image: url('./assets/pexels-polina-tankilevitch-4518665.jpg');
     background-size: 100%;
-    transform: rotate(90deg);
-
 }
 
 .made-by {
