@@ -92,3 +92,38 @@ body::-webkit-scrollbar {
     font-family: 'charger';
     font-size: 1em;
 }
+
+
+
+.made-by {
+    font-family: "Lato", sans-serif;
+    color: #201D1E;
+    grid-area: 4 / 1 / 5 / 2;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-size: 12px;
+    padding: 7px;
+    border-radius: 7px;
+    width: 100%;
+}
+
+.made-by a {
+    text-decoration: none;
+    color: #2b1719;
+}
+
+.made-by img {
+    transition: transform 0.3s ease-in-out;
+}
+
+#githubIcon {
+    content: url('./assets/github.png');
+    max-height: 16px;
+}
+
+.made-by img:hover {
+    transform: rotate(-360deg) scale(1.2);
+}
