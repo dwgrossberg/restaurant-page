@@ -127,9 +127,16 @@ body::-webkit-scrollbar {
     background-color: white;
 }
 
-#welcome-text {
+.welcome-text {
     font-family: 'charger', sans-serif;
     text-align: center;
+    word-spacing: 3px;
+}
+
+.welcome-chef {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 #chef-img {
@@ -140,6 +147,12 @@ body::-webkit-scrollbar {
     width: 250px;
     border-radius: 50%;
     border: 2.5px solid var(--main-accent-color);
+}
+
+.chef-text {
+    width: 200px;
+    font-size: 13px;
+    margin-top: 5px;
 }
 
 .main:nth-child(n+2):hover {
