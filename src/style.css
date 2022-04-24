@@ -99,7 +99,7 @@ body::-webkit-scrollbar {
     cursor: pointer;
 }
 
-#mainContent {
+#main-content {
     display: grid;
     grid-template: 300px 1fr 1fr 1fr / 1fr 1fr;
     align-self: center;
@@ -122,16 +122,17 @@ body::-webkit-scrollbar {
     min-width: 600px;
     height: 100%;
     margin: 50px;
-    border: 5px solid var(--main-accent-color);
+    border: 2.5px solid var(--main-accent-color);
+    outline: 2.5px solid var(--main-accent-color);
     background-color: white;
 }
 
-#welcomeText {
+#welcome-text {
     font-family: 'charger', sans-serif;
     text-align: center;
 }
 
-#chefImg {
+#chef-img {
     background-image: url('./assets/lan-pham-slyyeNC6qzY-unsplash.jpg');
     background-size: cover;
     background-position: right;
