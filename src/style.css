@@ -101,17 +101,19 @@ body::-webkit-scrollbar {
 
 #main-content {
     display: grid;
-    grid-template: 300px 1fr 1fr 1fr / 1fr 1fr;
+    grid-template: 300px repeat(auto-fit, minmax(300px, 1fr)) / 1fr 1fr;
     align-self: center;
     width: 100%;
     gap: 10vw;
+    padding-bottom: 50px;
 }
 
 .main {
     border: 5px solid white;
 }
 
-.home:nth-child(1) {
+.home:nth-child(1),
+.menu-food:nth-child(1) {
     grid-area: 1 / 1 / 2 / 3;
     justify-self: center;
     display: flex;
@@ -222,7 +224,10 @@ body::-webkit-scrollbar {
     background-size: cover;
 }
 
-
+.menu-food {
+    background-color: #ffcff1;
+    height: 300px;
+}
 
 
 
