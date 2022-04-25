@@ -261,9 +261,14 @@ body::-webkit-scrollbar {
     font-family: 'charger', sans-serif;
     font-size: .9em;
     word-spacing: 3px;
+    text-align: center;
+    font-size: 12px;
 }
 
 .menu-food:nth-child(1) {
+    background-image: url('./assets/montatip-lilitsanong-R6BOvlOifNo-unsplash.jpg');
+    background-size: cover;
+    background-position: center center;
     grid-area: 1 / 1 / 2 / -1;
     width: 90%;
 }
@@ -275,7 +280,7 @@ body::-webkit-scrollbar {
 }
 
 .menu-food:nth-child(2)::after {
-    content: "hi";
+    content: "Stewed Chicken Bamee - ฿150";
 }
 
 .menu-food:nth-child(3) {
@@ -285,17 +290,17 @@ body::-webkit-scrollbar {
 }
 
 .menu-food:nth-child(3)::after {
-    content: "hi";
+    content: "Braised-Beef Udon with Bok Choy - ฿200";
 }
 
 .menu-food:nth-child(4) {
     background-image: url('./assets/darth-liu-Pw3Z54QVtPE-unsplash.jpg');
     background-size: cover;
-    background-position: center center;
+    background-position: center bottom;
 }
 
 .menu-food:nth-child(4)::after {
-    content: "hi";
+    content: "Kimchee Stir-Fried Spaghetti - 150";
 }
 
 .menu-food:nth-child(5) {
@@ -305,7 +310,7 @@ body::-webkit-scrollbar {
 }
 
 .menu-food:nth-child(5)::after {
-    content: "hi";
+    content: "Roasted Pork and Crab with Sen Lek - ฿200";
 }
 
 .menu-food:nth-child(6) {
@@ -314,7 +319,7 @@ body::-webkit-scrollbar {
     background-position: center center;}
 
 .menu-food:nth-child(6)::after {
-    content: "hi";
+    content: "Tomyum Spiced Ramen with Crispy Pork - ฿175";
 }
 
 .menu-food:nth-child(7) {
@@ -324,7 +329,7 @@ body::-webkit-scrollbar {
 }
 
 .menu-food:nth-child(7)::after {
-    content: "hi";
+    content: "Dried Tomyum Mama with Shrimp - ฿225";
 }
 
 .made-by {
