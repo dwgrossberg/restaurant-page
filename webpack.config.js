@@ -1,6 +1,4 @@
 const path = require('path');
-// const HtmlWebpackPlugin = require('html-webpack-plugin');
-
 
  module.exports = {
     mode: 'development',
@@ -14,12 +12,6 @@ const path = require('path');
         path: path.resolve(__dirname, 'dist'),
         clean: true,
     },
-    // plugins: [
-        // new HtmlWebpackPlugin({
-            // title: 'Midnight's Noodle Bar',
-            // favicon: './src/assets/favicon.ico',
-        // }),
-    // ],
     module: {
         rules: [
             {
