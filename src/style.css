@@ -93,7 +93,7 @@ body::-webkit-scrollbar {
     padding: 15px 0;
     background-color: var(--main-accent-color);
     font-family: 'charger', sans-serif;
-    font-size: .9em;
+    font-size: .9rem;
 }
 
 .menu div:hover {
@@ -107,7 +107,7 @@ body::-webkit-scrollbar {
     background-position: center center;
     outline: 2.5px solid var(--main-accent-color);
     border: 2.5px solid white;
-    text-shadow: 1px 1px white;
+    text-shadow: 1.5px 1.5px white;
 }
 
 #main-content {
