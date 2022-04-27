@@ -1,7 +1,7 @@
 import './style.css';
 import faviconImg from './assets/favicon.ico';
-import homeModule from './home.js';
 import homeDisplay from './home.js';
+import menuDisplay from './menu';
 
 
 
@@ -81,23 +81,37 @@ const displayController = (() => {
             const myName = document.createTextNode('Dan Grossberg');
             madeBy.appendChild(myName);
         content.appendChild(madeBy);
+
         // Run the home module on load
         homeDisplay.runDisplay();
     }
+
+    const clearContent = () => {
+        
+    }
     
     const tabbedBrowsing = () => {
+        const nav = document.getElementsByClassName('nav');
+        Array.from(nav).forEach(div => div.addEventListener('mousedown', (e) => {
+            if (e.target.innerText === 'Home') {
+                homeDisplay.runDisplay();
+            } else if (e.target.innerText === 'Menu') {
+                menuDisplay.runDisplay();
+            }
+        }));
 
     }
 
 
     return {
 
-        onLoad
+        onLoad,
+        tabbedBrowsing
 
     };
 
 })();
 
 displayController.onLoad();
-
+displayController.tabbedBrowsing();
 

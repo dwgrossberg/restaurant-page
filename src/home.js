@@ -3,13 +3,13 @@
 const homeDisplay = (() => {
 
     const runDisplay = () => {
+        const mainContent = document.getElementById('main-content');
         // Set the nav bar icon
         const nav = document.getElementsByClassName('nav');
         console.log(nav, nav.length);
         nav[0].classList.add('menu-focus');
         // Homepage setup
         //<div class="home">
-        const mainContent = document.getElementById('main-content');
         const home1 = document.createElement('div');
         home1.classList.add('home');
         //<div class="welcome-text">
