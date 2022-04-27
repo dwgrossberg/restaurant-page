@@ -86,17 +86,34 @@ const displayController = (() => {
         homeDisplay.runDisplay();
     }
 
+    const nav = document.getElementsByClassName('nav');
+
     const clearContent = () => {
-        
+        for (let i = 0; i < nav.length; i++) {
+            if (nav[i].classList[1]) {
+                nav[i].classList.remove('menu-focus');
+            }
+        }
+        console.log(nav[0].classList[1], nav.length);
+        const mainContent = document.getElementById('main-content');
+        mainContent.innerHTML = '';
     }
     
     const tabbedBrowsing = () => {
-        const nav = document.getElementsByClassName('nav');
         Array.from(nav).forEach(div => div.addEventListener('mousedown', (e) => {
             if (e.target.innerText === 'Home') {
+                clearContent();
+                // Update the nav icon
+                nav[0].classList.add('menu-focus');
                 homeDisplay.runDisplay();
             } else if (e.target.innerText === 'Menu') {
+                clearContent();
+                nav[1].classList.add('menu-focus');
                 menuDisplay.runDisplay();
+            } else if (e.target.innerText === 'Contact') {
+                clearContent();
+                nav[2].classList.add('menu-focus');
+
             }
         }));
 

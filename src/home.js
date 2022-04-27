@@ -6,7 +6,6 @@ const homeDisplay = (() => {
         const mainContent = document.getElementById('main-content');
         // Set the nav bar icon
         const nav = document.getElementsByClassName('nav');
-        console.log(nav, nav.length);
         nav[0].classList.add('menu-focus');
         // Homepage setup
         //<div class="home">
