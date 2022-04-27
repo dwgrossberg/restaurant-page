@@ -4,14 +4,11 @@ const homeDisplay = (() => {
 
     const runDisplay = () => {
         const mainContent = document.getElementById('main-content');
-        // Set the nav bar icon
-        const nav = document.getElementsByClassName('nav');
-        nav[0].classList.add('menu-focus');
         // Homepage setup
-        //<div class="home">
+        // <div class="home">
         const home1 = document.createElement('div');
         home1.classList.add('home');
-        //<div class="welcome-text">
+        // <div class="welcome-text">
         const welcomeText = document.createElement('div');
         welcomeText.classList.add('welcome-text');
             const welcomeTextH3 = document.createElement('h3');
@@ -39,10 +36,10 @@ const homeDisplay = (() => {
             welcomeTextP5.appendChild(welcomeTextP5Node);
             welcomeText.appendChild(welcomeTextP5);
         home1.appendChild(welcomeText);
-        //<div class="welcome-chef">
+        // <div class="welcome-chef">
         const welcomeChef = document.createElement('div');
         welcomeChef.classList.add('welcome-chef');
-            //<div id="chef-img"></div>
+            // <div id="chef-img"></div>
             const chefImg = document.createElement('img');
             chefImg.setAttribute('id', 'chef-img');
             welcomeChef.appendChild(chefImg);
@@ -56,7 +53,7 @@ const homeDisplay = (() => {
             welcomeChef.appendChild(chefText);
         home1.appendChild(welcomeChef);
         mainContent.appendChild(home1);
-        //<div class="home"></div>
+        // <div class="home"></div>
         for (let i = 0; i < 5; i++) {
             const home = document.createElement('div');
             home.classList.add('home');

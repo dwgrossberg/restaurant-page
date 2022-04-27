@@ -1,11 +1,14 @@
 import './style.css';
 import faviconImg from './assets/favicon.ico';
 import homeDisplay from './home.js';
-import menuDisplay from './menu';
+import menuDisplay from './menu.js';
+import contactDisplay from './contact.js';
 
 
 
 const displayController = (() => {
+
+    const nav = document.getElementsByClassName('nav');
 
     const onLoad = () => {
         // Set the favicon on start
@@ -83,27 +86,29 @@ const displayController = (() => {
         content.appendChild(madeBy);
 
         // Run the home module on load
+        nav[0].classList.add('menu-focus');
         homeDisplay.runDisplay();
     }
 
-    const nav = document.getElementsByClassName('nav');
-
     const clearContent = () => {
+        // Remove the class 'menu-focus' from the current nav icon
         for (let i = 0; i < nav.length; i++) {
             if (nav[i].classList[1]) {
                 nav[i].classList.remove('menu-focus');
             }
         }
-        console.log(nav[0].classList[1], nav.length);
         const mainContent = document.getElementById('main-content');
-        mainContent.innerHTML = '';
+        // Loop over the mainContent nodes to remove all
+        while (mainContent.firstChild) {
+            mainContent.removeChild(mainContent.lastChild);
+        }
     }
     
     const tabbedBrowsing = () => {
         Array.from(nav).forEach(div => div.addEventListener('mousedown', (e) => {
             if (e.target.innerText === 'Home') {
                 clearContent();
-                // Update the nav icon
+                // Update the nav icon with the class of 'menu-focus' for styling
                 nav[0].classList.add('menu-focus');
                 homeDisplay.runDisplay();
             } else if (e.target.innerText === 'Menu') {
@@ -113,7 +118,7 @@ const displayController = (() => {
             } else if (e.target.innerText === 'Contact') {
                 clearContent();
                 nav[2].classList.add('menu-focus');
-
+                contactDisplay.runDisplay();
             }
         }));
 
