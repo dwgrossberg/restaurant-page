@@ -55,28 +55,32 @@ const contactDisplay = (() => {
         const contactDiv4 = document.createElement('div');
         contactDiv4.classList.add('contact');
         contactDiv4.setAttribute('id', 'map');
+        // Insert iFrame embed code
+        const iFrame = document.createElement('iframe');  
+        iFrame.setAttribute('src', 'https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d124023.8005481939!2d100.538877!3d13.733956999999997!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x311d6032280d61f3%3A0x10100b25de24820!2sBangkok!5e0!3m2!1sen!2sth!4v1651150509010!5m2!1sen!2sth" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade');
+        contactDiv4.appendChild(iFrame);
         mainContent.appendChild(contactDiv4);
-        // <script src="https:..."
-        const script = document.createElement('script');
-        script.src = "https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap&v=weekly";
-        script.defer = true;
-        mainContent.appendChild(script);
+        
+        // const script = document.createElement('script');
+        // script.src = "https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap&v=weekly";
+        // script.defer = true;
+        // mainContent.appendChild(script);
     }
 
     // Google Map embed setup
-    function initMap() {
-        const bangkok = { lat: 13.7563, lng: 100.5018 };
-        const map = new google.maps.Map(document.getElementById('map'), {
-            zoom: 12,
-            center: bangkok,
-        });
-        const marker = new google.maps.Marker({
-            position: bangkok,
-            map: map,
-        });
-    }   
-
-    window.initMap = initMap;
+    // function initMap() {
+        // const bangkok = { lat: 13.7563, lng: 100.5018 };
+        // const map = new google.maps.Map(document.getElementById('map'), {
+            // zoom: 12,
+            // center: bangkok,
+        // });
+        // const marker = new google.maps.Marker({
+            // position: bangkok,
+            // map: map,
+        // });
+    // }   
+// 
+    // window.initMap = initMap;
 
 
 

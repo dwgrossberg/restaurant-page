@@ -1,4 +1,5 @@
 const path = require('path');
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 // const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 
@@ -15,14 +16,14 @@ const path = require('path');
     output: {
         filename: 'main.js',
         path: path.resolve(__dirname, 'dist'),
-        clean: true,
+        // clean: true,
     },
-    // plugins: [
+    plugins: [
         // new HtmlWebpackPlugin({
             // title: "Midnight's Noodle Bar",
             // favicon: './src/assets/favicon.ico',
         // }),
-    // ],
+    ],
     performance: {
       hints: false,
       maxEntrypointSize: 512000,
