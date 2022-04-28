@@ -23,6 +23,11 @@ const path = require('path');
             // favicon: './src/assets/favicon.ico',
         // }),
     // ],
+    performance: {
+      hints: false,
+      maxEntrypointSize: 512000,
+      maxAssetSize: 512000
+    },
     module: {
         rules: [
             {
